@@ -31,7 +31,6 @@ export class AuthController {
         return this.authService.signinLocal(dto);
     }
 
-   
     @Post('logout')
     @HttpCode(HttpStatus.OK)
     logout(@GetCurrentUserId() userId: number) {
